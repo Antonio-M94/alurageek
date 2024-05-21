@@ -1,0 +1,407 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Estilos generales del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+.header {
+  width: 100%;
+  padding: 1.25rem 0;
+  height: 6rem;
+  background: #5300c8;
+  box-shadow: 0rem 0.4rem 0.06rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Estilos del logo en el encabezado */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  margin-right: 0.1rem;
+}
+
+.logo h1 {
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  color: #e5e5e5;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3.5rem 2.5rem;
+  gap: 4rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Contenedor de productos */
+.products {
+  width: 47rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  gap: 2.5rem;
+  flex-grow: 1.5;
+  box-sizing: border-box;
+}
+
+.products h2 {
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+/* Contenedor de la lista de productos */
+.products-container {
+  width: 47rem;
+  height: 50vh;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  background: #ffffff;
+  box-shadow: -0.75rem 0.6rem 0.4rem rgba(0, 0, 0, 0.25);
+  justify-content: center;
+}
+
+/* Estilos de la barra de desplazamiento */
+.products-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  border-radius: 10px;
+}
+
+/* Estilos de la tarjeta de producto */
+.card {
+  width: 12rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem;
+  gap: 0.6rem;
+  background: #5d04d9;
+  border: 0.2rem solid #000000;
+  box-shadow: -0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+}
+
+/* Contenedor de la imagen del producto */
+.img-container {
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 0.6rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
+.card:nth-child(odd) .img-container img {
+  border: 0.2rem solid #000000;
+}
+
+/* Información de la tarjeta de producto */
+.card-container--info {
+  width: 100%;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+
+/* Contenedor del valor del producto */
+.card-container--value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container--value p {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+/* Contenedor del formulario de productos */
+.form-products {
+  width: 29.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  gap: 2.5rem;
+}
+
+.form-products h2 {
+  width: 24.5rem;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.form-container input {
+  width: 24.5rem;
+  height: 3.5rem;
+  font-family: 'IBM Plex Mono';
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #03318c;
+  background: #ffffff;
+  border: 0.2rem solid #03318c;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
+}
+
+.form-container input::placeholder {
+  color: #03318c;
+}
+
+/* Contenedor de los botones del formulario */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 26rem;
+  height: 3.5rem;
+}
+
+.button-container button {
+  width: 24.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.button-container .button-submit {
+  background: #03318c;
+  font-family: 'IBM Plex Mono';
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+}
+
+.button-container .button-clear {
+  background: #ffffff;
+  font-family: 'IBM Plex Mono';
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color: #03318c;
+  border: 0.2rem solid #03318c;
+}
+
+/* Contenedor del pie de página */
+.footer-container {
+  width: 100%;
+  padding: 1.25rem 0;
+  height: 6rem;
+  background: #5300c8;
+  box-shadow: 0rem -0.4rem 0.06rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo h2 {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  color: #e5e5e5;
+}
+
+.footer-container h3 {
+  width: 18rem;
+  font-family: 'IBM Plex Mono';
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.footer-container h3::first-line {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1040px) {
+  .main-container {
+    flex-wrap: wrap;
+  }
+  /* Contenedor del formulario de productos */
+  .form-products {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* Contenedor del formulario */
+  .form-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.4rem;
+  }
+
+  .form-container input {
+    width: 100%;
+    height: 2.5rem;
+  }
+  .button-container {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+/* Estilos para dispositivos móviles */
+/* Para pantallas más pequeñas que 768px */
+@media screen and (max-width: 768px) {
+  /* Contenedor principal */
+  .main-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* Contenedor de la lista de productos */
+  .products {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .products-container {
+    box-sizing: border-box;
+    overflow: scroll;
+  }
+  /* Contenedor del formulario de productos */
+  .form-products {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* Contenedor del formulario */
+  .form-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.4rem;
+  }
+
+  .form-container input {
+    width: 100%;
+    height: 2.5rem;
+  }
+  .button-container {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Contenedor principal */
+  .main-container {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* Contenedor de la lista de productos */
+  .products {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .products-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.4rem;
+  }
+  /* Estilos de la tarjeta de producto */
+  .card {
+    box-sizing: border-box;
+    width: 10rem;
+  }
+  /* Contenedor de la imagen del producto */
+  .img-container {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.1rem;
+  }
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+    object-fit: cover;
+  }
+  /* Contenedor del formulario */
+  .form-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.4rem;
+  }
+
+  /* Contenedor del formulario de productos */
+  .form-products {
+    padding: 2rem;
+  }
+  .form-container input {
+    width: 20.5rem;
+    height: 2.5rem;
+  }
+  .button-container {
+    width: 21rem;
+    height: 2.5rem;
+  }
+}
