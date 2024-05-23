@@ -1,6 +1,6 @@
 import { servicesProduct } from '../service/product.service.js';
 
-// Seleccionamos el contenedor de productos y el formulario
+// Seleccionamos el contenedor de productos, el formulario y el botón de limpiar
 const productContainer = document.querySelector('[data-product]');
 const form = document.querySelector('[data-form]');
 const clearButton = document.getElementById('button-clear');
@@ -65,6 +65,11 @@ form.addEventListener('submit', async (event) => {
 
   try {
     await servicesProduct.createProduct(name, price, image);
+    // Limpia los inputs después de enviar el formulario
+    document.querySelector('[data-name]').value = '';
+    document.querySelector('[data-price]').value = '';
+    document.querySelector('[data-image]').value = '';
+    // Renderiza nuevamente los productos
     render();
   } catch (error) {
     console.log(error);
