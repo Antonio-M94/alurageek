@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Darth Vader",
+      "price": "50",
+      "image": "https://m.media-amazon.com/images/I/51-cM95EwhL._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 1
+    },
+    {
+      "name": "Flash",
+      "price": "25",
+      "image": "https://m.media-amazon.com/images/I/71bHJoW-HrL._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 2
+    },
+    {
+      "name": "Batman",
+      "price": "25",
+      "image": "https://m.media-amazon.com/images/I/71hSoQOVpxL._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 1
+    },
+    {
+      "id": "9488",
+      "name": "Superman",
+      "price": "29.99",
+      "image": "https://m.media-amazon.com/images/I/81uqMFzw6mL._AC_UL480_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "f65f",
+      "name": "Cell",
+      "price": "39.99",
+      "image": "https://m.media-amazon.com/images/I/710iYDgkXZL._AC_UL480_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "4e5d",
+      "name": "Androide 18",
+      "price": "110.98",
+      "image": "https://m.media-amazon.com/images/I/81EJTgFi3AL._AC_UL480_FMwebp_QL65_.jpg"
+    }
+  ]
+}
